@@ -1,0 +1,92 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+#calc-container {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    border: double 8px black;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 50px;
+}
+
+.operator, .number-button, #display, #clear-container {
+    flex-grow: 1;
+    border: solid 2px black;
+    display: flex;
+}
+
+.operator button {
+    background-color: rgb(92, 202, 238);
+}
+
+.operator button:hover {
+    background-color: rgb(57, 168, 247) ;
+}
+
+button {
+    flex-grow: 1;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+#display {
+    padding-left: 20px;
+    padding-top: 5px;
+    background-color: darkgrey;
+    color: white;
+    flex-grow: 3;
+    font-size: 34px;
+    font-weight: 700;
+    border-right: none;
+}
+
+#clear-container {
+    flex-grow: 0.5;
+}
+
+#clear {
+    font-weight: 500;
+    background-color: orange;
+}
+
+#clear:hover {
+    background-color: rgb(255, 128, 0);
+}
+
+#delete {
+    background-color: darkgrey;
+    border-left: none;
+    border-bottom: solid 2px black;
+    border-top: solid 2px black;
+    border-right: solid 2px black;
+    padding-right: 5px;
+    
+}
+
+#delete:hover {
+
+}
+
+#delete-button {
+    background-color: darkgrey;
+    border: none;
+    font-size: 28px;
+    font-weight: 800;
+    color: rgb(24, 24, 24)
+}
+
+#delete-button:hover {
+    color: red;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    border: none;
+}
